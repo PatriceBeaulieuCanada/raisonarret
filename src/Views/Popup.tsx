@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 
 
@@ -25,7 +25,7 @@ const Popup = (props:any) =>{
     return (props.trigger)?(
         <div className="popup">
             <div className="popup-inner">
-                <h3>Raison</h3>
+                <h3>Voulez-vous mettre une raison</h3>
                 <label className="popupLabel">{props.setText}</label>
                 <label className="popupLabel">{getDate()}</label>
                 <div>

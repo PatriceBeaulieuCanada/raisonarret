@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 
 const PopupSpeed = (props:any) =>{
@@ -25,7 +25,7 @@ const PopupSpeed = (props:any) =>{
     return(props.triggerSpeed)? (
         <div className="popup1">
             <div className="popup1-inner">
-                <h3>Raison de vitesse réduite</h3>
+                <h3>Voulez-vous mettre une raison de vitesse réduite</h3>
                 <label className="popupLabel">{props.setTextSpeed}</label>
                 <label className="popupLabel">{getDate()}</label>
                 <div>

@@ -1,9 +1,9 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 const querystring = require('querystring');
 
 const UseCallApi=async(param:any) =>{
 
-    if(param.action=='GetAllHumainReason') {
+    if(param.action==='GetAllHumainReason') {
         try {
 			const listHumainReason = await axios.get('http://itvxscada:5001/api/StopReason/GetAllHumainReason');		
 			return listHumainReason.data;
@@ -14,7 +14,7 @@ const UseCallApi=async(param:any) =>{
 		}        
     }
 
-	if(param.action=='GetAllReducedSpeed') {
+	if(param.action==='GetAllReducedSpeed') {
         try {
 			const listReducedSpeed = await axios.get('http://itvxscada:5001/api/StopReason/GetAllReducedSpeed');		
 			return listReducedSpeed.data;
@@ -25,9 +25,9 @@ const UseCallApi=async(param:any) =>{
 		}        
     }
 	
-	if(param.action=='AddStopReason') {
+	if(param.action==='AddStopReason') {
 
-		const config = { headers: { 'Content-Type': 'application/json' } };
+		//const config = { headers: { 'Content-Type': 'application/json' } };
 		//console.log(param)
 		
 		const params ={
@@ -44,9 +44,9 @@ const UseCallApi=async(param:any) =>{
 		}        
     }
 	
-	if(param.action=='AddSpeedReason') {
+	if(param.action==='AddSpeedReason') {
 
-		const config = { headers: { 'Content-Type': 'application/json' } };
+		//const config = { headers: { 'Content-Type': 'application/json' } };
 		//console.log(param)
 		
 		const params ={
@@ -63,9 +63,9 @@ const UseCallApi=async(param:any) =>{
 		}        
     }	
 
-	if(param.action=='ModifStopReason') {
+	if(param.action==='ModifStopReason') {
 
-		const config = { headers: { 'Content-Type': 'application/json' } };
+		//const config = { headers: { 'Content-Type': 'application/json' } };
 		//console.log(param)
 		
 		const params ={
@@ -82,9 +82,9 @@ const UseCallApi=async(param:any) =>{
 		}        
     }	
 
-	if(param.action=='ModifSpeedReason') {
+	if(param.action==='ModifSpeedReason') {
 
-		const config = { headers: { 'Content-Type': 'application/json' } };
+		//const config = { headers: { 'Content-Type': 'application/json' } };
 		//console.log(param)
 		
 		const params ={
